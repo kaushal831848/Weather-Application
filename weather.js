@@ -8,8 +8,8 @@ function getweather(){
     if(city===""){
         weatherDetails.innerHTML="<p>Please Enter a city</p>";
         return;
-        weatherDetails.innerHTML=""
     }
+    weatherDetails.innerHTML=""
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
     const populationApi =  ` https://countriesnow.space/api/v0.1/countries/population/cities`;
     fetch(url)
